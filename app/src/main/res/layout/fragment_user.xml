@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.UserFragment">
+
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search user"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:background="@drawable/custom_search"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

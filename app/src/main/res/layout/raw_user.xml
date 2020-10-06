@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_account_circle_primary_24dp"/>
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imgUser"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgOnline"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="#05df29"
+        android:visibility="gone"
+        android:src="@drawable/ic_account_circle_primary_24dp"
+        android:layout_toRightOf="@id/imgUser"
+        android:layout_alignBottom="@id/imgUser"
+        android:layout_marginLeft="-15dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgOffline"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="#bfbfbf"
+        android:visibility="gone"
+        android:src="@drawable/ic_account_circle_primary_24dp"
+        android:layout_toRightOf="@id/imgUser"
+        android:layout_alignBottom="@id/imgUser"
+        android:layout_marginLeft="-15dp"/>
+
+    <TextView
+        android:id="@+id/txtLastMSG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgUser"
+        android:layout_alignBottom="@id/imgUser"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>
